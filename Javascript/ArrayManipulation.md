@@ -42,3 +42,14 @@ let newArr = B.filter(b=>{
 
 
 ```
+
+3. You are given an array of numbers or strings. Remove all duplicate elements from it.
+```javascript
+let big = ["a","b","c","a","b","c","e","f"]
+
+function isDuplicate(element,pos){
+  return big.indexOf(element) === pos;
+}
+
+let output = big.filter(isDuplicate);
+```
