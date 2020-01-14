@@ -47,9 +47,9 @@ let newArr = B.filter(b=>{
 ```javascript
 let big = ["a","b","c","a","b","c","e","f"]
 
-function isDuplicate(element,pos){
+function removeDuplicate(element,pos){
   return big.indexOf(element) === pos;
 }
 
-let output = big.filter(isDuplicate);
+let output = big.filter(removeDuplicate);
 ```
