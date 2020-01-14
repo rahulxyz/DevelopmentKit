@@ -53,3 +53,53 @@ function removeDuplicate(element,pos){
 
 let output = big.filter(removeDuplicate);
 ```
+
+4. Given array of objects. Create list of objects that have only 3 properties named id,name,address.
+```javascript
+
+let propertyList = ['id','name','address'];
+let array = [
+  {
+  id: 'id',
+  name: '',
+  address: '',
+  },
+  {
+  id: 'id',
+  name: '',
+  address: '',
+  },
+  {
+  id: 'id',
+  name: '',
+  address: '',
+  },
+  {
+  id: 'id',
+  name: '',
+  },
+  {
+  id: 'id',
+  name: '',
+  address: '',
+  temporary: ''
+  },
+]
+
+function hasProps(object) {
+  
+  //should have 3 properties only
+  if(Object.keys(object).length !== 3)
+    return false;
+  
+  //should have props of propertyList
+  for(let prop of propertyList){
+    if(!object.hasOwnProperty(prop))
+      return false;
+  }
+  
+  return true;
+}
+
+let output = array.filter(hasProps)
+```
