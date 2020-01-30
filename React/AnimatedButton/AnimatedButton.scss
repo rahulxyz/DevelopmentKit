@@ -1,0 +1,29 @@
+.container {
+    width: 30%;
+    background: white;
+    border-radius: 10px;
+
+    .inner {
+      background-color: #00b6ff;
+      padding: 1em;
+      border-radius: 10px;
+      width: 100%;
+      clip-path: circle(10% at 0% 0%);
+      transition: clip-path 0.5s ease-in-out;
+  
+      h3{
+        color: white;
+        margin: 0;
+      }
+  
+      p{
+        color: white;
+        font-size: 0.8em;
+      }
+    }
+
+    &:hover .inner{
+        clip-path: circle(75%);
+    }
+
+}
